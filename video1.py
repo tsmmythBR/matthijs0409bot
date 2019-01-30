@@ -20,8 +20,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content == '!help':
-        await client.send_message(message.channel,'Je kan de krant opvragen dmv !robloxdev of !snorkrant. Je kan je task opvragen dmv: !tasks (je naam)!')
+    if message.content == '!helpmij':
+        await client.send_message(message.channel,'Je kan de krant opvragen dmv !robloxdev of !snorkrant. Je kan je task opvragen dmv: !tasks (writer/editor)!')
     if message.content == '!tasks':
         await client.send_message(message.channel,'Je kan je task opvragen dmv: !tasks (writer/editor)!')
     if message.content == '!tasks writer':
