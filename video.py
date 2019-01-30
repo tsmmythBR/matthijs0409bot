@@ -15,7 +15,7 @@ Clientdiscord = discord.Client()
 @client.event
 async def on_ready():
     await client.change_presence(game=Game(name='SnorWare', type = 2))
-    print('All systems ready!') 
+    print('Ready, Freddy') 
 
 
 @client.event
@@ -42,3 +42,4 @@ async def on_message(message):
         em = discord.Embed(description='Hier kun je alle kranten downloaden! https://mega.nz/#F!zeIlwSxL!AkEGnpAzPZuyqdH-N-H2Rw')
         em.set_image(url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIL0Shg5fh-2rxGimUmuZKNz3QAZSs0T2Df9W7G6QnwV6n150U')
         await client.send_message(message.channel, embed=em)
+client.run('NTM3NzE1NjMzOTgzMzI0MTc1.DzN1QA.7sxbE8RR9HLATi1kPc4dx5gdeGw')
