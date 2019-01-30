@@ -14,7 +14,7 @@ Clientdiscord = discord.Client()
 
 @client.event
 async def on_ready():
-    await client.change_presence(game=Game(name='SnorWare', type = 2))
+    await client.change_presence(game=Game(name='SnorWare V0.3', type = 2))
     print('Ready, Freddy') 
 
 
@@ -23,17 +23,11 @@ async def on_message(message):
     if message.content == '!help':
         await client.send_message(message.channel,'Je kan de krant opvragen dmv !robloxdev of !snorkrant. Je kan je task opvragen dmv: !tasks (je naam)!')
     if message.content == '!tasks':
-        await client.send_message(message.channel,'Je kan je task opvragen dmv: !tasks (je naam)!')
-    if message.content == '!tasks eDxiction':
-        await client.send_message(message.channel,'Je hebt op dit moment geen Task.')
-    if message.content == '!tasks demanmetsnor112':
-        await client.send_message(message.channel,'Je hebt op dit moment geen Task.')
-    if message.content == '!tasks matthijs0409':
-        await client.send_message(message.channel,'Je hebt op dit moment geen Task.')
-    if message.content == '!tasks dylanhaen':
-        await client.send_message(message.channel,'Je hebt op dit moment geen Task.')
-    if message.content == '!tasks jespower':
-        await client.send_message(message.channel,'Je hebt op dit moment geen Task.')
+        await client.send_message(message.channel,'Je kan je task opvragen dmv: !tasks (writer/editor)!')
+    if message.content == '!tasks writer':
+        await client.send_message(message.channel,'Je role heeft op dit moment geen Task.')
+    if message.content == '!tasks editor':
+        await client.send_message(message.channel,'Je role heeft op dit moment geen Task.')
     if message.content == '!robloxdev':
         em = discord.Embed(description='Hier kun je alle kranten downloaden! https://mega.nz/#F!HfRBGQYD!sQWl7IemfeDFbywTVEiw3w')
         em.set_image(url='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIL0Shg5fh-2rxGimUmuZKNz3QAZSs0T2Df9W7G6QnwV6n150U')
